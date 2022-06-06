@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>TABLE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    Enter a Number for the table: <input type="number" id="num"><br><br>
-    <button id="click" onclick="ABD()">Enter</button>
-</body>
+   <center> <h1>Table Generator</h1><br>
+    Enter a Number for the table: <input type="number" id="num">
+        <div><button id="click" onclick="Abd();">Enter</button></div>
+    </center>
 
+</body>
 <script>
-    function ABD() {
+    function Abd() {
         let num = +document.getElementById("num").value
         document.write('Table of ' + num + '<br>')
         for (let tb = 1; tb <= 10; tb++) {
