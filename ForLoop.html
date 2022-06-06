@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter a Number for the table: <input type="number" id="num"><br><br>
+    <button id="click" onclick="ABD()">Enter</button>
+</body>
+
+<script>
+    function ABD() {
+        let num = +document.getElementById("num").value
+        document.write('Table of ' + num + '<br>')
+        for (let tb = 1; tb <= 10; tb++) {
+            document.write(num + ' x ' + tb + ' = ' + (num * tb) + '<br>')
+        }
+    }
+</script>
+
+</html>
